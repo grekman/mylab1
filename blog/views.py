@@ -9,5 +9,5 @@ def home_page(request):
     return HttpResponse(hel)
 
 def indexmy(request):
-    context_mydict1 = {'title': "It's my first blog", 'boldmessage': "I am bold font from the context"}
-    return render(request, 'blog/indexmy.html', context_mydict1)
+    context_mydict = {'title': "It's my first blog", 'boldmessage': "I am bold font from the context"}
+    return render(request, 'blog/indexmy.html', context_mydict)
